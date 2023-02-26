@@ -19,4 +19,10 @@ $ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-## No-sail... erm, 
+Then with sail
+
+```sh
+$ ./vendor/bin/sail up
+```
+
+Not using sail? You should be able to get around with composer and your regular Laravel commands...
