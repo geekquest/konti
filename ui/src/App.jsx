@@ -5,6 +5,7 @@ import { Box, ChakraProvider, Grid, GridItem } from '@chakra-ui/react'
 import {Header} from "./Header"
 import {Navigation} from "./Navigation"
 import { MainContent } from './Content'
+import {Project} from './forms/Project'
 
 export default function App() {
   // 2. Wrap ChakraProvider at the root of your app
@@ -28,11 +29,11 @@ export default function App() {
         <GridItem pl='2' bg='pink.300' area={'nav'}>
           <Navigation />
         </GridItem>
-        <GridItem pl='2' bg='green.300' area={'main'}>
-          <MainContent />
+        <GridItem pl='2' area={'main'}>
+          <Project />
         </GridItem>
-        <GridItem pl='2' bg='blue.300' area={'footer'}>
-          Footer
+        <GridItem pl='2'  area={'footer'}>
+          
         </GridItem>
       </Grid>
       </Box>
