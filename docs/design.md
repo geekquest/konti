@@ -33,6 +33,10 @@ interface Project {
     contributions: Array<Contribution>
 }
 
+interface SecurityContributions {
+    
+}
+
 interface Contribution {
     contributedFor: Project,
     contributor: Person,
