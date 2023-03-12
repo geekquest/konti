@@ -15,7 +15,6 @@ export default function App() {
         gridTemplateRows={'50px 1fr 30px'}
         gridTemplateColumns={'150px 1fr'}
         h='auto'
-        w='100%'
         gap='1'
         color='blackAlpha.700'
         fontWeight='bold'
