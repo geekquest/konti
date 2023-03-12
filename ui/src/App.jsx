@@ -2,6 +2,7 @@ import * as React from 'react'
 
 // 1. import `ChakraProvider` component
 import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react'
+import {Header} from "./Header"
 
 export default function App() {
   // 2. Wrap ChakraProvider at the root of your app
@@ -20,10 +21,10 @@ export default function App() {
         fontWeight='bold'
       >
         <GridItem pl='2' bg='orange.300' area={'header'}>
-          Header
+          <Header title="Konti" />
         </GridItem>
         <GridItem pl='2' bg='pink.300' area={'nav'}>
-          Nav
+          Navigation
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'main'}>
           Main
