@@ -8,4 +8,4 @@ class Header extends React.Component{
     }
 };
 
-export {Header};
+export  {Header};

@@ -1,13 +1,16 @@
 import * as React from 'react'
 
 // 1. import `ChakraProvider` component
-import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react'
+import { Box, ChakraProvider, Grid, GridItem } from '@chakra-ui/react'
 import {Header} from "./Header"
+import {Navigation} from "./Navigation"
+import { MainContent } from './Content'
 
 export default function App() {
   // 2. Wrap ChakraProvider at the root of your app
   return (
     <ChakraProvider>
+      <Box w="100%">
       <Grid
         templateAreas={`"header header"
                         "nav main"
@@ -23,15 +26,16 @@ export default function App() {
           <Header title="Konti" />
         </GridItem>
         <GridItem pl='2' bg='pink.300' area={'nav'}>
-          Navigation
+          <Navigation />
         </GridItem>
         <GridItem pl='2' bg='green.300' area={'main'}>
-          Main
+          <MainContent />
         </GridItem>
         <GridItem pl='2' bg='blue.300' area={'footer'}>
           Footer
         </GridItem>
       </Grid>
+      </Box>
     </ChakraProvider>
   )
 }
