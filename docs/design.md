@@ -44,7 +44,7 @@ interface Contribution {
     contributedOn: Date,
     contributedVia: ContributionChannel,
     acknowledged: boolean,
-    createdAt: Date,
+    createdAt: Date,    
     updatedAt: Date,
     thankYouEmailSent: boolean
 }
