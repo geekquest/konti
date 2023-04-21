@@ -1,9 +1,9 @@
 # konti
 
-Konti is an experiment to create a simple application in Laravel that uses the [Greypot Studio API](https://greypot-studio.fly.dev)
+Contributions tracking...
 
 ```sh
-$ git clone https://github.com/zikani03/konti.git
+$ git clone https://github.com/geekquest/konti.git
 
 $ cd konti
 ```
