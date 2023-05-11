@@ -3,7 +3,7 @@
 Contributions tracking...
 
 ```sh
-$ git clone https://github.com/geekquest/konti.git
+$ git clone git@github.com:geekquest/konti.git
 
 $ cd konti
 ```

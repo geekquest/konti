@@ -1,9 +1,10 @@
 # ROADMAP
 
-- implement a simple Greypot Client 
-  - that makes a simple Http POST to greypot-studio server
-- implement a simple Parrot Client 
-  - generate files and store the response to the file system ...
+### Initiation Phase
 
-- Add a ChakraUI for the UI
-- 
+- Design components layouts
+  - Sidebar: with Projects, Contributors, Contributions, Channels, Settings, Dashboard, Settings, Reports
+  - Project Page component: with tabs for About, Contributors, Contributions, Contribution Channels, Summary, Total Accumulated, Pledges
+  - Latest / Most Recent Contributions component
+  - Record Contribution modal: with fields for contributor, amount, currency, whether it's a pledge, date, channel, and ofcourse project
+  - Contributor Summary: with info including full name, phone, email, twitter, linkedin, github, contributions, projects, total contribution summary, total projects summary, pledges made
