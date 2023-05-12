@@ -1,6 +1,7 @@
 export default function() {
     return (
         <footer>
+            <div className="container">
             <ul>
                 <li>Home</li>
                 <li>Projects</li>
@@ -18,6 +19,7 @@ export default function() {
                 <li>GitHub Repository</li>
                 <li>Terms and Conditions</li>
             </ul>
+            </div>
         </footer>
     )
 }

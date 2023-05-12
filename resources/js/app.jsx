@@ -1,6 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -32,7 +32,9 @@ function App() {
     return (
         <ChakraProvider>
             <AppNavbar />
-            {contributionSummaryList}
+            <div className="container">
+                {contributionSummaryList}
+            </div>
             <AppFooter />
         </ChakraProvider>
     )

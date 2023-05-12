@@ -1,22 +1,24 @@
-import { Card, CardHeader, CardBody, CardFooter, Text } from '@chakra-ui/react'
+import Card from 'react-bootstrap/Card'
 import { Balancer } from 'react-wrap-balancer'
 
-export default function({ project }) {
+export default function ({ project }) {
     return (
         <div className="contribution-card">
             <Card>
-                <CardHeader>
-                    <h3><Balancer>{project.title}</Balancer></h3>
-                    {project.isOpenToContribution ? 'Open to Contributions' : 'Closed to Contributions' }
-                </CardHeader>
-                <CardBody>
-                    <p>Total Contributed: MWK {project.totalContributed}</p>
-                    <p>Total Contributors: {project.totalContributors}</p>
-                    <Text>{project.description}</Text>
-                </CardBody>
-                <CardFooter>
+                <Card.Body>
+                    <Card.Title>
+                        <Balancer>{project.title}</Balancer>
+                    </Card.Title>
+                    <Card.Text>
+                        {project.isOpenToContribution ? 'Open to Contributions' : 'Closed to Contributions'}
+                        <p>Total Contributed: MWK {project.totalContributed}</p>
+                        <p>Total Contributors: {project.totalContributors}</p>
+                        <p>{project.description}</p>
+                    </Card.Text>
+                </Card.Body>
+                <Card.Footer>
                     <a href="">View More</a>
-                </CardFooter>
+                </Card.Footer>
             </Card>
         </div>
     )
