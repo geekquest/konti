@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AllContributorsReportController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,11 @@ use App\Http\Controllers\AllContributorsReportController;
 |
 */
 
+Route::get('/signup', function () {
+    return view('signup');
+})->name('signup');
+
+
 Route::get('/', function () {
     return view('index');
 });
@@ -21,5 +27,9 @@ Route::get('/', function () {
 Route::get('/reports', function () {
     return view('reports');
 });
+
+ 
+Route::get('/signup', [FormController::class, 'create'])->name('signup.create');
+Route::post('/signup', [FormController::class, 'store'])->name('signup.store');
 
 Route::get('/reports/contributors', [AllContributorsReportController::class, 'download']);
