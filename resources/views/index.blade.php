@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="grid grid-rows-2 vh-100 h-100">
+<div class="grid grid-rows-2">
     <div class="grid grid-cols-2">
         <div class="col-1/2 bg-black p-5 h-100">
             <div class="text-white">
@@ -63,6 +63,7 @@
             </div>
         </div>
     </div>
+    
     <div class="grid grid-cols-3">
         <div class="col-1/4 text-center bg-red-500 py-5">
             <img src="" alt="" class="center">
